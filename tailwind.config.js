@@ -37,6 +37,18 @@ export default {
 		  900: "#cce7cc",
 		  1000: "#e5f3e5",
 	      },
+	      red4g: {
+		  100: "#8b0000",
+		  200: "#961919",
+		  300: "#a23232",
+		  400: "#ad4c4c",
+		  500: "#b96666",
+		  600: "#c47f7f",
+		  700: "#d09999",
+		  800: "#dcb2b2",
+		  900: "#e7cccc",
+		  1000: "#f3e5e5",
+	      },
 	      SkyBlueg: {
 		  100: "#87ceeb",
 		  200: "#93d2ec",
@@ -89,6 +101,9 @@ export default {
 	  fontSize: {
 	      'tp1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'tp2': ['25pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
+	      'he1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
+	      'ra1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
+	      'hw2': ['25pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'gm1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'gm2': ['30pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'gm3': ['20pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
