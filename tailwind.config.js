@@ -7,10 +7,23 @@ export default {
   theme: {
       extend: {
 	  fontFamily: {
-              kode: ["'Kode Mono'", "monospace"], 
-	      caveat: ["Caveat", "cursive"],
+              grace: ["'Covered By Your Grace'", "cursive"],
+	      merienda: ["'Merienda SC'", "cursive"],
+	      meriendac: ["'Merienda'", "cursive"],
+              madi: ["'Ms Madi'", "cursive"],
+              gochi: ["'Gochi Hand'", "cursive"],
+              playwrite: ["'Playwrite Australia Tasmania'", "cursive"],
+              rancho: ["'Rancho'", "cursive"],
+              schoolbell: ["'Schoolbell'", "cursive"],
+              comingsoon: ["'Coming Soon'", "cursive"],
+              bubblegum: ["'Bubblegum Sans'", "cursive"],
+              // You can also keep your earlier ones if you want:
+              amatic: ["'Amatic SC'", "cursive"],
+              badscript: ["'Bad Script'", "cursive"],
+              gloria: ["'Gloria Hallelujah'", "cursive"],
+              indie: ["'Indie Flower'", "cursive"],
+              pangolin: ["'Pangolin'", "cursive"],
 	      roboto: ["'Roboto'", "sans-serif"],  // clean UI fallback
-	      gloria: ['"Gloria Hallelujah"', 'cursive'],
 	  },
 	  fontWeight: {
 	      thin: 100,

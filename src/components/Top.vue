@@ -6,7 +6,7 @@
 
 <template>
   <div class="text-center max-w-[70%] mx-auto bg-SkyBlueg-400 py-10">
-    <p class="text-tp1 text-brown4g-100 font-bold2 font-roboto">Lunch ticker</p>
+    <p class="text-tp1 text-brown4g-100 font-meriendac">Lunch ticker</p>
   </div>
   <!-- <GMapMap
        :center="{lat:59.3293, lng:18.0686}"
