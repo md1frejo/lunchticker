@@ -123,6 +123,36 @@ export default {
 	  },
       },
   },
-  plugins: [require("daisyui")],
+    plugins: [require("daisyui")],
+    daisyui: {
+	themes: [
+	    {
+		mytheme: {
+		    "primary": "#4ade80",      // lime green
+		    "secondary": "#facc15",    // yellow
+		    "accent": "#38bdf8",       // sky blue
+		    "neutral": "#1f2937",      // gray-800
+		    "base-100": "#ffffff",     // background
+		    "info": "#3abff8",
+		    "success": "#36d399",
+		    "warning": "#fbbd23",
+		    "error": "#f87272",
+		    "--btn-text-case": "none",
+		    "--rounded-box": "1rem",
+		    "--rounded-btn": "1rem",
+		    "--animation-btn": "0.25s",
+		    "--btn-font-family": "'Covered By Your Grace', cursive",
+		},
+	    },
+	    "dark", // include built-in themes too
+	],
+	darkTheme: "dark", // default dark theme
+	base: true,        // add background color & text color to <body>
+	styled: true,      // include DaisyUI's prebuilt component styles
+	utils: true,       // include utility classes like `btn`, `card`, etc.
+	rtl: false,        // enable right-to-left support
+	prefix: "",        // optionally prefix DaisyUI classes
+	logs: true,        // log DaisyUI version in console
+    },
 }
 

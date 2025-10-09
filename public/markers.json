@@ -2,7 +2,10 @@
     { "lat": 57.69380, "lng": 11.91759, "title": "fritz","pris":"125kr","betyg":"*****" },
     { "lat": 57.69932, "lng": 11.94410, "title": "daawat","pris":"145kr","betyg":"*****" },
     { "lat": 57.69431, "lng": 11.91853, "title": "golden lee","pris":"129kr","betyg":"***" },
-    { "lat": 57.70198, "lng": 11.95400, "title": "schnitzelplatz","pris":"145kr","betyg":"*****" }
+    { "lat": 57.70198, "lng": 11.95400, "title": "schnitzelplatz","pris":"145kr","betyg":"*****" },
+    { "lat": 57.67304, "lng": 11.88234, "title": "storseglet","pris":"115kr","betyg":"*****" },
+    { "lat": 57.71817, "lng": 11.94968, "title": "tildas","pris":"129kr","betyg":"****" },
+        { "lat": 57.69205, "lng": 11.95213, "title": "marinade","pris":"135kr","betyg":"****" }
 ]
 
 
