@@ -62,6 +62,18 @@ export default {
 		  900: "#e7cccc",
 		  1000: "#f3e5e5",
 	      },
+	      WhiteSmokeg: {
+		  100: "#f5f5f5",
+		  200: "#f6f6f6",
+		  300: "#f7f7f7",
+		  400: "#f8f8f8",
+		  500: "#f9f9f9",
+		  600: "#fafafa",
+		  700: "#fbfbfb",
+		  800: "#fcfcfc",
+		  900: "#fdfdfd",
+		  1000: "#fefefe",
+	      },
 	      SkyBlueg: {
 		  100: "#87ceeb",
 		  200: "#93d2ec",
@@ -112,7 +124,7 @@ export default {
 	      },
 	  },
 	  fontSize: {
-	      'tp1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
+	      'tp1': ['60pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'tp2': ['25pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'he1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'ra1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
