@@ -126,7 +126,8 @@ export default {
 	  fontSize: {
 	      'tp1': ['60pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'tp2': ['25pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
-	      'he1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
+	      'he1': ['35pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
+	      'he2': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'ra1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'hw2': ['25pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'gm1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],

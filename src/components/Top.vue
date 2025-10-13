@@ -6,7 +6,7 @@
 
 <template>
 
-  <div class="relative h-[800px]">
+  <div class="relative h-[400px]">
     <div class="card lg:card-side bg-gradient-to-r from-[#ffffff] to-[#fefefe] shadow-sm max-w-[70%] mx-auto">
       <figure>
 	<img src="../../public/lunch2.jpg"
