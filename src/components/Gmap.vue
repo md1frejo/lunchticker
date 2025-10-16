@@ -64,7 +64,7 @@ onMounted(() => {
    const pinHeight = 10 * scale
    const totalHeight = boxHeight + pinHeight
 
-   // 🔥 Add glow filter if selected
+   // Add glow filter if selected
    const glowFilter = isSelected
 		    ? `<filter id="glow">
          <feGaussianBlur stdDeviation="${2 * scale}" result="coloredBlur"/>
@@ -114,8 +114,7 @@ ${glowFilter}
     :center="selected || { lat: 57.6911, lng: 11.9255 }"
     :zoom="zoomLevel"
     :options="mapOptions"
-    style="width: 100%; height: 500px"
-  >
+    style="width: 100%; height: 500px">
     <GMapMarker
       v-for="(m, i) in markers"
       :key="i"

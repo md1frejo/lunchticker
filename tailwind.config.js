@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -128,6 +128,7 @@ export default {
 	      'tp2': ['25pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'he1': ['35pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'he2': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
+	      'he3': ['30pt', { lineHeight: '1.2', fontWeight: '50', letterSpacing: '0em' }],
 	      'ra1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'hw2': ['25pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'gm1': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
