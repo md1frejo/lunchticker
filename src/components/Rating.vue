@@ -40,15 +40,16 @@
 
 <template>
 
-  <div v-if="bw.best && bw.worst" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[70%] mx-auto">
-      <div class="flex flex-wrap gap-4">
-	<p class="text-he2">Bäst just nu: </p>
+  <div v-if="bw.best && bw.worst" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[70%] mx-auto">
+    <div class="flex flex-wrap gap-4">
+      <p class="text-he2 font-madi font-bold1">Bäst: </p>
+      <p class="text-he2 text-blue3g-200 font-badscript font-bold1 cursor-pointer hover:text-blue-500" @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
+	{{ bw.best.title }} </p>	
       </div>
       <div class="flex flex-wrap gap-4">
-	<p class="font-semibold text-he3">{{ bw.best.title }}</p>
-      </div>
-      <div class="flex flex-wrap gap-4">
-	<p class="font-semibold text-he3">{{ bw.worst.title }}</p>
+	<p class="text-he2 font-madi font-bold1">sämst: </p>
+	<p class="text-he2 text-blue3g-200 font-badscript font-bold1 cursor-pointer hover:text-blue-500" @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
+	  {{ bw.worst.title }} </p>	
       </div>
     </div>
     <div class="max-w-[70%] mx-auto py-10">
