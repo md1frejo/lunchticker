@@ -42,30 +42,29 @@
 
   <div v-if="bw.best && bw.worst" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[70%] mx-auto">
     <div class="flex flex-wrap gap-4">
-      <p class="text-he2 font-madi font-bold1">Bäst: </p>
-      <p class="text-he2 text-blue3g-200 font-badscript font-bold1 cursor-pointer hover:text-blue-500" @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
-	{{ bw.best.title }} </p>	
-      </div>
+      <p class="text-he4 font-roboto font-extralight">Bäst: </p>
+      <p class="underline text-he2 text-center text-blue3g-200 font-badscript font-bold1 cursor-pointer hover:text-blue-500 " @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
+	{{ bw.best.title }} </p>
+      <p class="text-he4 font-roboto font-extralight">[generös sallad<br>kaka till kafet, bra pris]</p>
+    </div>
       <div class="flex flex-wrap gap-4">
-	<p class="text-he2 font-madi font-bold1">sämst: </p>
-	<p class="text-he2 text-blue3g-200 font-badscript font-bold1 cursor-pointer hover:text-blue-500" @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
-	  {{ bw.worst.title }} </p>	
+	<p class="text-he4 font-roboto font-extralight">sämst: </p>
+	<p class="underline text-he2 text-red4g-200 font-badscript font-bold1 cursor-pointer hover:text-blue-500" @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
+	  {{ bw.worst.title }} </p>
+	<p class="text-he4 font-roboto font-extralight">[mängden fetma<br> är abnorm]</p>
       </div>
     </div>
     <div class="max-w-[70%] mx-auto py-10">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="text-left bg-blue-50 p-6 rounded shadow">
-	<h2 class="text-xl font-bold mb-4">Bäst just nu (*****)</h2>
+	<p class="text-he3 font-comingsoon mb-4">Bäst just nu:</p>
 	<ul class="flex flex-wrap gap-4">
           <li
             v-for="m in markers.filter(m => m.betyg==='*****')"
             :key="m.title"
             class="cursor-pointer hover:text-blue-500 p-2 border rounded w-[200px]"
             @click="selectPlace(m)">
-            <span class="block font-semibold">{{ m.title }}</span>
-            <span class="block text-sm text-gray-500">
-              {{ m.pris }} — {{ m.betyg }}
-            </span>
+            <span class="text-he5 font-comingsoon text-red4g-200 text-extralight">{{ m.title }} {{ m.pris }} {{ m.betyg }}</span>
           </li>
 	</ul>
       </div>
