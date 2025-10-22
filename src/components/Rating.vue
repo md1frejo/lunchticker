@@ -43,13 +43,13 @@
   <div v-if="bw.best && bw.worst" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[70%] mx-auto">
     <div class="flex flex-wrap gap-4">
       <p class="text-he4 font-roboto font-extralight">Topp: </p>
-      <p class="underline text-he2 text-center text-blue3g-200 font-roboto font-extralight cursor-pointer hover:text-blue-500 " @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
+      <p class="underline text-he2 text-center text-green4g-100 font-roboto font-extralight cursor-pointer hover:text-blue-500 " @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
 	{{ bw.best.title }} </p>
       <p class="text-he4 font-madi font-extralight">"generös sallad<br>kaka till kafet, bra pris"</p>
     </div>
       <div class="flex flex-wrap gap-4">
 	<p class="text-he4 font-roboto font-extralight">Botten: </p>
-	<p class="underline text-he2 text-red4g-200 font-roboto font-bold1 cursor-pointer hover:text-blue-500" @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
+	<p class="underline text-he2 text-red4g-100 font-roboto font-bold1 cursor-pointer hover:text-blue-500" @click="selectPlace({ lat: bw.best.lat, lng: bw.best.lng })">
 	  {{ bw.worst.title }} </p>
 	<p class="text-he4 font-madi font-extralight">"mängden fetma<br> är abnorm"</p>
       </div>
@@ -68,7 +68,6 @@
           </li>
 	</ul>
       </div>
-
       <div class="text-left bg-blue-50 p-6 rounded shadow">
 	<p class="text-he3 font-comingsoon mb-4">Sämst just nu</p>
 	<ul class="flex flex-wrap gap-4">

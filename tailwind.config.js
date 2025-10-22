@@ -127,8 +127,8 @@
 	  fontSize: {
 	      'tp1': ['60pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'tp2': ['25pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
-	      'he1': ['35pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
-	      'he2': ['40pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
+	      'he1': ['25pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
+	      'he2': ['30pt', { lineHeight: '1.2', fontWeight: '100', letterSpacing: '0em' }],
 	      'he3': ['30pt', { lineHeight: '1.2', fontWeight: '50', letterSpacing: '0em' }],
  	      'he4': ['25pt', { lineHeight: '1.2', fontWeight: '50', letterSpacing: '0em' }],
 	      'he5': ['20pt', { lineHeight: '1.2', fontWeight: '50', letterSpacing: '0em' }],

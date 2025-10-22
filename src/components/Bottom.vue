@@ -3,14 +3,12 @@
 </script>
 
 <template>
-  <div class="p-40">
-    <div class="bg-LightBlueg-700 p-6 rounded text-center space-x-4">
+  <div class="bg-cyang-1000 text-center max-w-[70%] mx-auto p-10">
       <div class="flex items-center justify-center space-x-4">
 	<Mail class="w-10 h-10 text-navajoWhite4g-300" />
 	<p class="text-bo1 text-browngrad-200">jonas.mb [at] gmail.com</p>
       </div>
     </div>
-  </div>
 </template>
 
 <style>
