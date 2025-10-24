@@ -1,4 +1,5 @@
 <script setup>
+
  import { ref, defineProps, watch, onMounted } from 'vue'
 
  const props = defineProps({
@@ -31,7 +32,6 @@
          title: m.title,
          icon: makeStickerIcon(m.title, m.pris, m.betyg, zoomLevel.value, false),
        })
-
        marker.addListener('click', () => {
          // Deselect previous marker
          if (selectedMarker.value && selectedMarker.value !== marker) {

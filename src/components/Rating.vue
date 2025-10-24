@@ -57,10 +57,10 @@
     <div class="max-w-[70%] mx-auto py-10">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="text-left bg-blue-50 p-6 rounded shadow">
-	<p class="text-he3 font-comingsoon mb-4">Bäst just nu</p>
+	<p class="text-he3 font-comingsoon mb-4">rekommenderas</p>
 	<ul class="flex flex-wrap gap-4">
           <li
-            v-for="m in markers.filter(m => m.betyg==='*****')"
+            v-for="m in markers.filter(m => m.betyg==='****')"
             :key="m.title"
             class="cursor-pointer hover:text-blue-500 p-2 border rounded w-[200px]"
             @click="selectPlace(m)">

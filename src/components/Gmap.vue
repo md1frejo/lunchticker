@@ -23,42 +23,72 @@ onMounted(() => {
     center: { lat: 57.6911, lng: 11.9255 },
     zoom: zoomLevel.value,
   })
-// Add all markers
+
   if (props.markers) {
     props.markers.forEach((m) => {
       const marker = new google.maps.Marker({
         position: { lat: m.lat, lng: m.lng },
         map,
         title: m.title,
-        icon: makeStickerIcon(m.title, m.pris, m.betyg, zoomLevel.value),
+        icon: makeStickerIcon(m.title, m.pris, m.betyg, zoomLevel.value, false),
+      })
+
+      marker.addListener('click', () => {
+        // emit custom event if needed:
+        // emit('update:selected', m)
+        // Or if selection is managed locally, you can modify props.selected (with v-model)
+        map.panTo({ lat: m.lat, lng: m.lng })
       })
       markerMap.set(m.title, marker)
     })
   }
-})
+ })
+
+ 
+ //      markerMap.set(m.title, marker)
 
    // Watch selected and center + animate marker
- watch(
-   () => props.selected,
-   (sel) => {
-     if (sel && map) {
-       map.panTo({ lat: sel.lat, lng: sel.lng })
-       map.setZoom(14)
+ watch(() => props.selected,(sel,prevSel) => {
 
-       // find the corresponding marker
-      const marker = markerMap.get(sel.title)
-      if (marker) {
-        marker.setAnimation(google.maps.Animation.BOUNCE)
-        setTimeout(() => marker.setAnimation(null), 1400)
-      }
+    if (!map) return
+
+    // Reset previous marker's icon to normal size
+    if (prevSel && markerMap.has(prevSel.title)) {
+      const prevMarker = markerMap.get(prevSel.title)
+      prevMarker.setIcon(
+        makeStickerIcon(prevSel.title, prevSel.pris, prevSel.betyg, zoomLevel.value, false)
+      )
     }
-  },
+
+    // Highlight current selection
+    if (sel && markerMap.has(sel.title)) {
+      const marker = markerMap.get(sel.title)
+      marker.setIcon(
+        makeStickerIcon(sel.title, sel.pris, sel.betyg, zoomLevel.value, true)
+      )
+      map.panTo({ lat: sel.lat, lng: sel.lng })
+      map.setZoom(14)
+
+      // Set larger icon for selected marker
+      marker.setAnimation(google.maps.Animation.BOUNCE)
+      setTimeout(() => marker.setAnimation(null), 1400)
+    }
+  }
  )
  
  function makeStickerIcon(title, pris, betyg, zoomLevel, isSelected = false) {
    const baseWidth = 70
    const baseHeight = 40
-   const scale = Math.max(0.5, Math.min(2.5, zoomLevel / 12))
+
+   // Normal zoom scaling
+   let scale = Math.max(0.5, Math.min(2.5, zoomLevel / 12))
+
+   // If selected, enlarge a bit more
+   if (isSelected) {
+     scale *= 1.8   // Try 1.2–1.6 for how big you want it
+   }
+   
+//   const scale = Math.max(0.5, Math.min(2.5, zoomLevel / 12))
    const boxWidth = baseWidth * scale
    const boxHeight = baseHeight * scale
    const pinHeight = 10 * scale
