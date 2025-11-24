@@ -29,7 +29,6 @@
      console.error('Error loading best worst:', err)
    }
  })
-
  
  console.log(bw)
  function selectPlace(m) {
