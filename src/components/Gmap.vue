@@ -139,6 +139,7 @@ ${glowFilter}
 </script>
 
 <template>
+  
   <GMapMap
     ref="mapRef"
     :center="selected || { lat: 57.6911, lng: 11.9255 }"
