@@ -67,7 +67,7 @@ onMounted(() => {
         makeStickerIcon(sel.title, sel.pris, sel.betyg, zoomLevel.value, true)
       )
       map.panTo({ lat: sel.lat, lng: sel.lng })
-      map.setZoom(14)
+      map.setZoom(4)
 
       // Set larger icon for selected marker
       marker.setAnimation(google.maps.Animation.BOUNCE)
